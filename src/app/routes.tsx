@@ -19,6 +19,12 @@ export default function AppRouter() {
         {
           path: '/movie',
           element: <LazyMoviePage />,
+          children: [
+            {
+              path: ':movieId',
+              element: <LazyMoviePage />,
+            },
+          ]
         },
       ],
       errorElement: <div>404</div>,

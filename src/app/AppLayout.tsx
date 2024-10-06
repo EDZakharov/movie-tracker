@@ -17,14 +17,14 @@ export const AppLayout = () => {
           </Link>
         </nav>
       </header>
-      <section>
+      <section className="">
         <main>
           <Suspense fallback={<div>Loading...</div>}>
             <Outlet />
           </Suspense>
         </main>
       </section>
-      <footer></footer>
+      <footer className=""></footer>
     </>
   );
 };
